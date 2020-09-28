@@ -1,57 +1,165 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <head>
-      <title>YOUNGBO | COSCOI</title>
+    <title>COSCOI - COntents Signature COnvergence Improvement</title>
 
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <meta
-        name="description"
-        content="캐릭터에 생명을 불어 넣는, 글로벌 콘텐츠 기업 COSCOI."
-      />
-      <meta
-        name="keywords"
-        content="character, animation, contents, 동유기,the east"
-      />
-      <meta name="author" content="COSCOI co.ltd" />
+    <meta
+      name="description"
+      content="캐릭터에 생명을 불어 넣는, 글로벌 콘텐츠 기업 COSCOI."
+    />
+    <meta
+      name="keywords"
+      content="character, animation, contents, 동유기, go east"
+    />
+    <meta name="author" content="COSCOI co.ltd" />
 
-      <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
-      <!-- <link rel="icon" type="image/x-icon" href="img/favicon_apple16.png" sizes="16x16">  -->
-      <!-- <link rel="stylesheet" type="text/css" href="css/common.css"> -->
+    <!-- <link rel="icon" type="image/x-icon" href="img/favicon_apple16.png" sizes="16x16">  -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/common.css"> -->
 
-      <link rel="stylesheet" type="text/css" href="styles.css" />
-    </head>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
   </head>
   <body>
-    <!-- <video
-      width="100%"
-      height="100%"
-      src="video/2b5fa25d-c3e6-42bd-89c2-2043952856db.mp4"
-      type="video/mp4"
-      autoplay
-      muted
-      loop
-    ></video> -->
-    <section class="hero">
+    <header>
+      <nav id="main_menu">
+        <div
+          id="main_menu_button"
+          onmouseover="menuButtonOver();"
+          onmouseout="menuButtonOut();"
+        >
+          <span id="menu_button_span_1" class="menu_button_span"></span>
+          <span id="menu_button_span_2" class="menu_button_span"></span>
+          <span id="menu_button_span_3" class="menu_button_span"></span>
+        </div>
+
+        <figure class="main_logo">
+          <img src="img/main_logo2.png" />
+        </figure>
+      </nav>
+
+      <nav id="sns_button">
+        <h3><span></span> FOLLOW/SHARE</h3>
+      </nav>
+
+      <!-- <nav id="gnb">
+         HOME
+         ABOUT
+         CONTENTS
+         WORKS
+         PR
+         HR
+      </nav> -->
+    </header>
+    <!-- <video width="100%" height="100%" autoplay muted loop controls>
+      <source src="video/coscoi_1.mp4" type="video/mp4"> 
+      <source src="video/coscoi_1.ogg" type="video/ogg">
+      당신의 브라우저는 비디오 화일 재생을 지원하지 않습니다.
+   </video> -->
+    <section id="hero">
       <div class="video_wrap">
-        <video width="100%" autoplay muted loop>
+        <video autoplay muted loop>
           <source
             src="video/2b5fa25d-c3e6-42bd-89c2-2043952856db.mp4"
             type="video/mp4"
           />
+          <source
+            src="video/2b5fa25d-c3e6-42bd-89c2-2043952856db.ogg"
+            type="video/ogg"
+          />
+          당신의 브라우저는 비디오 화일 재생을 지원하지 않습니다.
         </video>
       </div>
 
-      <figure class="logo_wrap">
-        <img src="img/main_logo2.png" />
+      <div class="hero_border">
+        <img src="img/bg_empty.png" />
+      </div>
+
+      <div class="hero_title_wrap">
+        <h2>동유기<br />HD Full 3D CGI Animation</h2>
+        <p>형을 찾아 동쪽으로 길을 떠난 바나몽과 친구들의 먹방여행기</p>
+        <span></span>
+      </div>
+
+      <figure class="hero_banner_1">
+        <a href=""><img src="img/2021.jpeg" /></a>
       </figure>
 
       <figure class="scroll_next">
         <img src="img/arrow_down01.png" />
       </figure>
     </section>
+
+    <section class="contents">
+      <div class="contents_title">
+        <h3>CONTENTS</h3>
+        <p></p>
+      </div>
+
+      <div class="title_box">
+        <h2>GO<br />EAST</h2>
+        <figure><img src="img/main-cont-s1_logo.png" /></figure>
+      </div>
+      <div class="c_monkey">
+        <figure><img src="img/main-cont-s1_i1.png" /></figure>
+      </div>
+      <div class="c_rabbit">
+        <figure><img src="img/main-cont-s1_i2.png" /></figure>
+      </div>
+      <div class="c_mouse">
+        <figure><img src="img/main-cont-s1_i3.png" /></figure>
+      </div>
+      <div class="c_man">
+        <figure><img src="img/main-cont-s1_i4.png" /></figure>
+      </div>
+      <div class="c_car">
+        <figure><img src="img/main-cont-s1_i5.png" /></figure>
+      </div>
+      <div class="c_banana">
+        <figure><img src="img/main-cont-s1_i6.png" /></figure>
+      </div>
+      <div class="c_balloon">
+        <figure><img src="img/main-cont-s1_i7.png" /></figure>
+      </div>
+    </section>
+
+    <script>
+      // console.log(document.body.scrollTop);
+
+      function menuButtonOver() {
+        document.getElementById("menu_button_span_1").style =
+          "width: 20px; margin: 2px 12px 2px 12px; ";
+
+        document.getElementById("menu_button_span_2").style =
+          "width: 10px; margin: 2px 12px 2px 22px; ";
+
+        document.getElementById("menu_button_span_3").style =
+          "width: 20px; margin: 2px 12px 2px 12px; ";
+      }
+
+      function menuButtonOut() {
+        document.getElementById("menu_button_span_1").style =
+          "width: 10px; margin: 2px 12px 2px 22px; ";
+
+        document.getElementById("menu_button_span_2").style =
+          "width: 20px; margin: 2px 12px 2px 12px; ";
+
+        document.getElementById("menu_button_span_3").style =
+          "width: 10px; margin: 2px 22px 2px 12px; ";
+      }
+
+      function scrollFadeIn() {
+        console.log(document.body.scrollTop);
+        // if ( 조건 ) { 실행문  }
+
+        if (document.body.scrollTop > 300) {
+          // 트리거 시점 (trigger)
+          // document.getElementById("id_new_menu_1_figure").style =" animation:new_menu_fade_in_left 2s forwards; ";
+          // document.getElementById("id_new_menu_1_text").style =" animation:new_menu_fade_in_right 2s forwards; ";
+        }
+      }
+    </script>
   </body>
 </html>
